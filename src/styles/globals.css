@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Base grayscale theme and typography */
+:root {
+  color-scheme: light;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-white text-black font-sans antialiased selection:bg-gray-900 selection:text-white;
+}
+
+/* Focus styles */
+:where(a, button, [role="button"], input, select, textarea, summary):focus-visible {
+  @apply outline-none ring-2 ring-gray-900 ring-offset-2 ring-offset-white;
+}
+
+/* Utility helpers */
+.container-px { @apply px-4 sm:px-6 lg:px-8; }
+.section-py { @apply py-16 sm:py-24; }
+
+/* Smooth grayscale images */
+img { image-rendering: auto; }
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
+}
