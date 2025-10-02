@@ -1,5 +1,5 @@
 export type Plan = {
-  name: 'Básico' | 'Estándar' | 'Premium';
+  name: string;
   price: string;
   features: string[];
   cta: string;
@@ -7,33 +7,36 @@ export type Plan = {
 
 export const plans: Plan[] = [
   {
-    name: 'Básico',
-    price: '€150',
+    name: '2-4 personas',
+    price: '$180',
     features: [
-      '1 hora de sesión',
-      '10 fotos editadas',
-      'Entrega digital',
+      '60 minutos de sesión',
+      '1-2 outfit',
+      '20-25 imágenes editadas',
+      'En nuestra galería en línea, listas para imprimir',
     ],
-    cta: 'Reservar Básico',
+    cta: 'Reservar Sesión',
   },
   {
-    name: 'Estándar',
-    price: '€300',
+    name: '5-10 personas',
+    price: '$330',
     features: [
-      '2 horas de sesión',
-      '25 fotos editadas',
-      'Galería privada',
+      '60 minutos de sesión',
+      '1-2 outfit',
+      '20-25 imágenes editadas',
+      'En nuestra galería en línea, listas para imprimir',
     ],
-    cta: 'Reservar Estándar',
+    cta: 'Reservar Sesión',
   },
   {
-    name: 'Premium',
-    price: '€600',
+    name: '11+ personas',
+    price: '$600',
     features: [
-      '4 horas de sesión',
-      '60 fotos editadas',
-      'Impresiones incluidas',
+      '60 minutos de sesión',
+      '1-2 outfit',
+      '20-25 imágenes editadas',
+      'En nuestra galería en línea, listas para imprimir',
     ],
-    cta: 'Reservar Premium',
+    cta: 'Reservar Sesión',
   },
 ];
