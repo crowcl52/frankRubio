@@ -16,12 +16,25 @@ export interface Translations {
   
   // Services section
   familyPackages: string
+  soloPackages: string
+  basic: string
+  classic: string
+  especial: string
   persons2to4: string
   persons5to10: string
   persons11plus: string
   sessionDuration: string
+  basicDuration: string
+  classicDuration: string
+  especialDuration: string
+  basicOutfit: string
+  classicOutfit: string
+  especialOutfit: string
   outfits: string
   editedImages: string
+  basicEditedImages: string
+  classicEditedImages: string
+  especialEditedImages: string
   onlineGallery: string
   bookSession: string
   
@@ -78,12 +91,25 @@ export const translations: Record<Language, Translations> = {
     
     // Services section
     familyPackages: 'Paquetes Familiares',
+    soloPackages: 'Paquetes Individuales',
+    basic: 'Básico',
+    classic: 'Clásico',
+    especial: 'Especial',
     persons2to4: '2-4 personas',
     persons5to10: '5-10 personas',
     persons11plus: '11+ personas',
     sessionDuration: '60 minutos de sesión',
+    basicDuration: '30 minutos de sesión',
+    classicDuration: '60 minutos de sesión',
+    especialDuration: '2 horas de sesión',
     outfits: '1-2 outfit',
+    basicOutfit: '1 outfit',
+    classicOutfit: '1-2 outfit',
+    especialOutfit: '1-4 outfit',
     editedImages: '20-25 imágenes editadas',
+    basicEditedImages: '10-15 imágenes editadas',
+    classicEditedImages: '20-25 imágenes editadas',
+    especialEditedImages: '30-35 imágenes editadas',
     onlineGallery: 'En nuestra galería en línea, listas para imprimir',
     bookSession: 'Reservar Sesión',
     
@@ -139,12 +165,25 @@ export const translations: Record<Language, Translations> = {
     
     // Services section
     familyPackages: 'Family Packages',
+    soloPackages: 'Individual Session Packages',
+    basic: 'Basic',
+    classic: 'Classic',
+    especial: 'Special',
+    basicDuration: '30 minutes session',
+    classicDuration: '60 minutes session',
+    especialDuration: '2 hours session',
+    basicOutfit: '1 outfit',
+    classicOutfit: '1-2 outfit',
+    especialOutfit: '1-4 outfit',
+    editedImages: '20-25 edited images',
+    basicEditedImages: '10-15 edited images',
+    classicEditedImages: '20-25 edited images',
+    especialEditedImages: '30-35 edited images',
     persons2to4: '2-4 people',
     persons5to10: '5-10 people',
     persons11plus: '11+ people',
     sessionDuration: '60 minutes session',
     outfits: '1-2 outfit',
-    editedImages: '20-25 edited images',
     onlineGallery: 'In our online gallery, ready to print',
     bookSession: 'Book Session',
     
