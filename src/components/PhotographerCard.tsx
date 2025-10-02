@@ -1,10 +1,8 @@
-import { motion, useMotionValue, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 
 export default function PhotographerCard() {
   const [flipped, setFlipped] = useState(false)
-  const rotateY = useMotionValue(0)
-  const rotate = useTransform(rotateY, (v) => `rotateY(${v}deg)`)
 
   const toggle = () => setFlipped((f) => !f)
 

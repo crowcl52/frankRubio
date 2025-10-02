@@ -4,14 +4,6 @@ import SmartImage from './SmartImage'
 export default function Hero() {
   return (
     <header className="relative w-full">
-      <link
-        rel="preload"
-        as="image"
-        href="/gallery/derived/1440/hero.jpg"
-        imagesrcset="/gallery/derived/768/hero.jpg 768w, /gallery/derived/1024/hero.jpg 1024w, /gallery/derived/1440/hero.jpg 1440w, /gallery/derived/1920/hero.jpg 1920w"
-        imagesizes="100vw"
-        fetchpriority="high"
-      />
       <div className="relative h-[80svh] overflow-hidden rounded-2xl container-px mt-6">
         <motion.div
           initial={{ scale: 1.1, opacity: 0.9 }}
