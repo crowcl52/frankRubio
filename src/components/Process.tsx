@@ -2,7 +2,7 @@ export default function Process() {
   const steps = [
     { title: 'Consulta', desc: 'Definimos objetivos y estilo.', icon: '◎' },
     { title: 'Sesión', desc: 'Dirección serena y precisa.', icon: '◇' },
-    { title: 'Edición', desc: 'Blanco y negro con carácter.', icon: '▣' },
+    { title: 'Edición', desc: 'Con carácter.', icon: '▣' },
     { title: 'Entrega', desc: 'Galería privada y selección.', icon: '▭' },
   ]
   return (

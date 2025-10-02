@@ -1,13 +1,51 @@
-import { plans } from '../lib/plans'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Pricing() {
+  const { t } = useLanguage()
+
+  const plans = [
+    {
+      name: t.persons2to4,
+      price: '$180',
+      features: [
+        t.sessionDuration,
+        t.outfits,
+        t.editedImages,
+        t.onlineGallery,
+      ],
+      cta: t.bookSession,
+    },
+    {
+      name: t.persons5to10,
+      price: '$330',
+      features: [
+        t.sessionDuration,
+        t.outfits,
+        t.editedImages,
+        t.onlineGallery,
+      ],
+      cta: t.bookSession,
+    },
+    {
+      name: t.persons11plus,
+      price: '$600',
+      features: [
+        t.sessionDuration,
+        t.outfits,
+        t.editedImages,
+        t.onlineGallery,
+      ],
+      cta: t.bookSession,
+    },
+  ]
+
   return (
     <section className="section-py container-px">
-      <h2 className="text-2xl sm:text-3xl font-semibold mb-8">Servicios</h2>
+      <h2 className="text-2xl sm:text-3xl font-semibold mb-8 italic">{t.familyPackages}</h2>
       <div className="grid gap-6 sm:grid-cols-3">
         {plans.map((p) => (
           <div key={p.name} className="rounded-2xl border border-gray-200 p-6 shadow-subtle bg-white">
-            <h3 className="text-xl font-semibold">{p.name}</h3>
+            <h3 className="text-xl font-semibold italic">{p.name}</h3>
             <p className="mt-2 text-3xl font-bold">{p.price}</p>
             <ul className="mt-4 space-y-2 text-gray-700">
               {p.features.map((f) => (

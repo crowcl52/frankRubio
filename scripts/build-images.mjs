@@ -14,7 +14,7 @@ async function ensureDir(p) {
 
 async function buildOne(inputPath) {
   const base = path.basename(inputPath).replace(/\.(jpe?g|png|tif|tiff)$/i, '')
-  const img = sharp(inputPath).greyscale().withMetadata()
+  const img = sharp(inputPath).withMetadata()
   const { width, height } = await img.metadata()
 
   // LQIP
