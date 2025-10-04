@@ -29,3 +29,101 @@ img { image-rendering: auto; }
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; scroll-behavior: auto !important; }
 }
+
+
+/* Unused; Tailwind via globals.css */
+:root{
+  --glitch-color: #00e5ff;     /* cian */
+  --glitch-color-2: #ff3d81;   /* magenta */
+  --glitch-text: #000;      /* gris claro */
+  --glitch-speed: .9s;         /* duración de animación */
+  --glitch-font: 600 14px/1.2 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+
+.glitch{
+  position:relative;
+  display:inline-block;
+  color:var(--glitch-text);
+  font:var(--glitch-font);
+  letter-spacing:.4px;
+  text-decoration:none;
+  text-transform:none;
+  isolation:isolate; /* separa las capas del resto */
+  transition:filter .2s ease, opacity .2s ease;
+}
+
+/* Capas duplicadas para el efecto */
+.glitch::before,
+.glitch::after{
+  content:attr(data-text);
+  position:absolute; inset:0;
+  pointer-events:none;
+  clip-path:inset(0 0 0 0 round 2px);
+  opacity:0;                         /* ocultas por defecto */
+  mix-blend-mode:screen;              /* hace el glow más bonito */
+}
+
+/* Capa cian */
+.glitch::before{
+  color:var(--glitch-color);
+  transform:translate(0,0);
+  text-shadow:0 0 8px color-mix(in oklab, var(--glitch-color), #000 60%);
+}
+
+/* Capa magenta */
+.glitch::after{
+  color:var(--glitch-color-2);
+  transform:translate(0,0);
+  text-shadow:0 0 8px color-mix(in oklab, var(--glitch-color-2), #000 60%);
+}
+
+/* Animación en hover / focus */
+.glitch:hover,
+.glitch:focus-visible{
+  filter:brightness(1.1);
+}
+
+.glitch:hover::before,
+.glitch:hover::after,
+.glitch:focus-visible::before,
+.glitch:focus-visible::after{
+  opacity:1;
+  animation:glitch-shift var(--glitch-speed) steps(20,end) infinite,
+           glitch-slices calc(var(--glitch-speed) * 1.1) steps(24,end) infinite;
+}
+
+/* Keyframes: jitter horizontal + vertical */
+@keyframes glitch-shift{
+  0%   { transform:translate( 0px,  0px); }
+  10%  { transform:translate(-2px, -1px); }
+  20%  { transform:translate( 2px,  1px); }
+  30%  { transform:translate(-1px,  2px); }
+  40%  { transform:translate( 1px, -2px); }
+  50%  { transform:translate(-3px,  1px); }
+  60%  { transform:translate( 3px, -1px); }
+  70%  { transform:translate(-1px,  0px); }
+  80%  { transform:translate( 1px,  1px); }
+  90%  { transform:translate(-2px, -1px); }
+  100% { transform:translate( 0px,  0px); }
+}
+
+/* Va “cortando” líneas del texto como glitch televisivo */
+@keyframes glitch-slices{
+  0%   { clip-path:inset(0    0 80% 0); }
+  10%  { clip-path:inset(10%  0 65% 0); }
+  20%  { clip-path:inset(40%  0 40% 0); }
+  30%  { clip-path:inset(70%  0 10% 0); }
+  40%  { clip-path:inset(45%  0 35% 0); }
+  50%  { clip-path:inset(20%  0 60% 0); }
+  60%  { clip-path:inset(80%  0  0% 0); }
+  70%  { clip-path:inset(55%  0 25% 0); }
+  80%  { clip-path:inset(30%  0 50% 0); }
+  90%  { clip-path:inset(15%  0 65% 0); }
+  100% { clip-path:inset(0    0 80% 0); }
+}
+
+/* Accesibilidad: respeta “reducir movimiento” */
+@media (prefers-reduced-motion: reduce){
+  .glitch::before, .glitch::after{ animation:none !important; opacity:0 !important; }
+}
