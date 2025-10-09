@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="container-px pb-10 pt-8 text-sm text-gray-600">
       <div className="flex flex-col sm:flex-row justify-between gap-2 border-t border-gray-200 pt-6">
         <p>© {new Date().getFullYear()} {" "}
-          <a href="https://mycv-94fb2.web.app/view/WEtKpVykTCadujjf0PzlyD8x7n22" target='_blank' className="glitch" data-text="Eduardo Sánchez">
+          <a href="https://edsanchezdev.netlify.app/es/" target='_blank' className="glitch" data-text="Eduardo Sánchez">
             Eduardo Sánchez 
           </a>
           {" "}
