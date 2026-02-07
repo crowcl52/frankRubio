@@ -5,57 +5,42 @@ export default function Pricing() {
 
   const plans = [
     {
-      name: t.persons2to4,
+      name: t.familyBasicTitle,
       price: '$210',
-      features: [
-        t.sessionDuration,
-        t.outfits,
-        t.editedImages,
-        t.onlineGallery,
-      ],
+      features: [t.familyBasic1, t.familyBasic2, t.familyBasic3, t.familyBasic4],
       cta: t.bookSession,
     },
     {
-      name: t.persons5to10,
+      name: t.familyClassicTitle,
       price: '$330',
-      features: [
-        t.sessionDuration,
-        t.outfits,
-        t.editedImages,
-        t.onlineGallery,
-      ],
+      features: [t.familyClassic1, t.familyClassic2, t.familyClassic3, t.familyClassic4],
       cta: t.bookSession,
     },
     {
-      name: t.persons11plus,
+      name: t.familySpecialTitle,
       price: '$450',
-      features: [
-        t.sessionDuration,
-        t.outfits,
-        t.editedImages,
-        t.onlineGallery,
-      ],
+      features: [t.familySpecial1, t.familySpecial2, t.familySpecial3, t.familySpecial4],
       cta: t.bookSession,
     },
   ]
 
   const basicPlans = [
     {
-      name: t.basic,
+      name: t.basicPlanTitle,
       price: '$170',
-      features: [t.sessionDuration, t.outfits, t.editedImages, t.onlineGallery],
+      features: [t.basicPlan1, t.basicPlan2, t.basicPlan3, t.basicPlan4],
       cta: t.bookSession,
     },
     {
-      name: t.classic,
+      name: t.classicPlanTitle,
       price: '$280',
-      features: [t.sessionDuration, t.outfits, t.editedImages, t.onlineGallery],
+      features: [t.classicPlan1, t.classicPlan2, t.classicPlan3, t.classicPlan4],
       cta: t.bookSession,
     },
     {
-      name: t.especial,
+      name: t.specialPlanTitle,
       price: '$390',
-      features: [t.sessionDuration, t.outfits, t.editedImages, t.onlineGallery],
+      features: [t.specialPlan1, t.specialPlan2, t.specialPlan3, t.specialPlan4],
       cta: t.bookSession,
     },
   ]

@@ -38,6 +38,40 @@ export interface Translations {
   onlineGallery: string
   bookSession: string
   
+  // Planes familiares personalizados
+  familyBasicTitle: string
+  familyBasic1: string
+  familyBasic2: string
+  familyBasic3: string
+  familyBasic4: string
+  familyClassicTitle: string
+  familyClassic1: string
+  familyClassic2: string
+  familyClassic3: string
+  familyClassic4: string
+  familySpecialTitle: string
+  familySpecial1: string
+  familySpecial2: string
+  familySpecial3: string
+  familySpecial4: string
+
+  // Planes básicos personalizados
+  basicPlanTitle: string
+  basicPlan1: string
+  basicPlan2: string
+  basicPlan3: string
+  basicPlan4: string
+  classicPlanTitle: string
+  classicPlan1: string
+  classicPlan2: string
+  classicPlan3: string
+  classicPlan4: string
+  specialPlanTitle: string
+  specialPlan1: string
+  specialPlan2: string
+  specialPlan3: string
+  specialPlan4: string
+
   // Gallery section
   portfolioTitle: string
   
@@ -91,10 +125,40 @@ export const translations: Record<Language, Translations> = {
     
     // Services section
     familyPackages: 'Paquetes Familiares',
+    familyBasicTitle: 'Básico',
+    familyBasic1: '30 minutos de sesión,',
+    familyBasic2: '1 outfit',
+    familyBasic3: '10-15 imágenes editadas',
+    familyBasic4: 'en nuestra galería en línea, listas para imprimir.',
+    familyClassicTitle: 'Clásico',
+    familyClassic1: '60 minutos de sesión,',
+    familyClassic2: '1-2 outfit',
+    familyClassic3: '20-25 imágenes editadas',
+    familyClassic4: 'en nuestra galería en línea, listas para imprimir.',
+    familySpecialTitle: 'Especial',
+    familySpecial1: '2 horas de sesión,',
+    familySpecial2: '1-4 outfit',
+    familySpecial3: '30-35 imágenes editadas',
+    familySpecial4: 'en nuestra galería en línea, listas para imprimir.',
     soloPackages: 'Paquetes Individuales',
     basic: 'Básico',
     classic: 'Clásico',
     especial: 'Especial',
+    basicPlanTitle: 'Básico',
+    basicPlan1: '30 minutos de sesión,',
+    basicPlan2: '1 outfit',
+    basicPlan3: '10-15 imágenes editadas',
+    basicPlan4: 'en nuestra galería en línea, listas para imprimir.',
+    classicPlanTitle: 'Clásico',
+    classicPlan1: '60 minutos de sesión,',
+    classicPlan2: '1-2 outfit',
+    classicPlan3: '20-25 imágenes editadas',
+    classicPlan4: 'en nuestra galería en línea, listas para imprimir.',
+    specialPlanTitle: 'Especial',
+    specialPlan1: '1.5 horas de sesión',
+    specialPlan2: '1-4 outfit',
+    specialPlan3: '30-35 imágenes editadas',
+    specialPlan4: 'en nuestra galería en línea, listas para imprimir.',
     persons2to4: '2-4 personas',
     persons5to10: '5-10 personas',
     persons11plus: '11+ personas',
@@ -165,10 +229,40 @@ export const translations: Record<Language, Translations> = {
     
     // Services section
     familyPackages: 'Family Packages',
+    familyBasicTitle: 'Basic',
+    familyBasic1: '30 minutes session,',
+    familyBasic2: '1 outfit',
+    familyBasic3: '10-15 edited images',
+    familyBasic4: 'in our online gallery, ready to print.',
+    familyClassicTitle: 'Classic',
+    familyClassic1: '60 minutes session,',
+    familyClassic2: '1-2 outfit',
+    familyClassic3: '20-25 edited images',
+    familyClassic4: 'in our online gallery, ready to print.',
+    familySpecialTitle: 'Special',
+    familySpecial1: '2 hours session,',
+    familySpecial2: '1-4 outfit',
+    familySpecial3: '30-35 edited images',
+    familySpecial4: 'in our online gallery, ready to print.',
     soloPackages: 'Individual Session Packages',
     basic: 'Basic',
     classic: 'Classic',
     especial: 'Special',
+    basicPlanTitle: 'Basic',
+    basicPlan1: '30 minutes session,',
+    basicPlan2: '1 outfit',
+    basicPlan3: '10-15 edited images',
+    basicPlan4: 'in our online gallery, ready to print.',
+    classicPlanTitle: 'Classic',
+    classicPlan1: '60 minutes session,',
+    classicPlan2: '1-2 outfit',
+    classicPlan3: '20-25 edited images',
+    classicPlan4: 'in our online gallery, ready to print.',
+    specialPlanTitle: 'Special',
+    specialPlan1: '1.5 hours session',
+    specialPlan2: '1-4 outfit',
+    specialPlan3: '30-35 edited images',
+    specialPlan4: 'in our online gallery, ready to print.',
     basicDuration: '30 minutes session',
     classicDuration: '60 minutes session',
     especialDuration: '2 hours session',
