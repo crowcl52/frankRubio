@@ -6,7 +6,7 @@ export default function Pricing() {
   const plans = [
     {
       name: t.persons2to4,
-      price: '$180',
+      price: '$210',
       features: [
         t.sessionDuration,
         t.outfits,
@@ -28,7 +28,7 @@ export default function Pricing() {
     },
     {
       name: t.persons11plus,
-      price: '$600',
+      price: '$450',
       features: [
         t.sessionDuration,
         t.outfits,
@@ -42,19 +42,19 @@ export default function Pricing() {
   const basicPlans = [
     {
       name: t.basic,
-      price: '$80',
+      price: '$170',
       features: [t.sessionDuration, t.outfits, t.editedImages, t.onlineGallery],
       cta: t.bookSession,
     },
     {
       name: t.classic,
-      price: '$140',
+      price: '$280',
       features: [t.sessionDuration, t.outfits, t.editedImages, t.onlineGallery],
       cta: t.bookSession,
     },
     {
       name: t.especial,
-      price: '$250',
+      price: '$390',
       features: [t.sessionDuration, t.outfits, t.editedImages, t.onlineGallery],
       cta: t.bookSession,
     },
